@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
     <div
-  className="hero min-h-screen">
+  className="hero min-h-screen container mx-auto">
   
   <div className="hero-overlay"></div>
   <div className="hero-content text-neutral-content text-center">
