@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "rating": 9.9,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium",
+    "price": 2500000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1T4EAYle5QgehCzMKOjTun3sugyZNlQcrPrskA-UbA&s=10"
+  },
+  {
+    "id": 2,
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerType": "All-Rounder",
+    "rating": 9.8,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Left-arm Orthodox",
+    "price": 2200000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1T4EAYle5QgehCzMKOjTun3sugyZNlQcrPrskA-UbA&s=10"
+  },
+  {
+    "id": 3,
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerType": "Batsman",
+    "rating": 9.7,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Off Break",
+    "price": 2300000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1T4EAYle5QgehCzMKOjTun3sugyZNlQcrPrskA-UbA&s=10"
+  },
+  {
+    "id": 4,
+    "playerName": "Pat Cummins",
+    "playerCountry": "Australia",
+    "playerType": "Bowler",
+    "rating": 9.6,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Fast",
+    "price": 2400000,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1T4EAYle5QgehCzMKOjTun3sugyZNlQcrPrskA-UbA&s=10"
+  },
+  {
+    "id": 5,
+    "playerName": "Jos Buttler",
+    "playerCountry": "England",
+    "playerType": "Wicket Keeper",
+    "rating": 9.5,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "None",
+    "price": 2100000,
+    "image": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=400"
+  },
+  {
+    "id": 6,
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerType": "Batsman",
+    "rating": 9.4,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Off Break",
+    "price": 2000000,
+    "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400"
+  }
+]
