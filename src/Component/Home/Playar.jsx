@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import AvailablePlayers from './AvailablePlayers';
+import SelictedPlayer from './SelictedPlayer';
 
 const Playar = ({PlayerPromis}) => {
   const data = use(PlayerPromis);
@@ -9,7 +10,10 @@ const Playar = ({PlayerPromis}) => {
   return (
     <>
      <div className='container mx-auto flex justify-between py-3'>
-      <p className='text-2xl font-bold'>Avalivale Player</p>
+
+
+      { selected === "avalivale" ? <p className='text-2xl font-bold'>Avalivale Player</p> :<p className='text-2xl font-bold'>SelictedPlayer(2/6)</p> }
+
       <div>
         <button onClick={() =>setSelected("avalivale")}
         className={`btn ${selected === "avalivale" ? "bg-green-500" : ""} btn-soft btn-primary`}>Avalivale
@@ -20,7 +24,12 @@ const Playar = ({PlayerPromis}) => {
       </div>
      </div>
 
-    <AvailablePlayers data={data}></AvailablePlayers>
+     {
+       selected === "avalivale" ? <AvailablePlayers data={data}></AvailablePlayers> : <SelictedPlayer></SelictedPlayer>
+     }
+
+    
+    
     
     </>
   );
