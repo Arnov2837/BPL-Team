@@ -5,6 +5,8 @@ import Hero from './Component/Home/Hero'
 import Playar from './Component/Home/Playar'
 import { Suspense } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
+import Footer from './Component/Footer/Footer'
+import CopyRightFooter from './Component/Footer/CopyRightFooter'
 
 const fatchPlayre = async()=> {
   const res = await fetch("/Plaredata.json");
@@ -21,8 +23,10 @@ function App() {
       <Suspense fallback ="coming....">
         <Playar PlayerPromis={PlayerPromis} ></Playar>
       </Suspense>
+      <Footer></Footer>
+      <CopyRightFooter></CopyRightFooter>
 
-      /* react tost component */
+      {/* react tost component */}
        <ToastContainer />
     </>
   )
