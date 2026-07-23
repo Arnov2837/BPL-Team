@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaUser } from "react-icons/fa";
 import { IoIosFlag } from "react-icons/io";
 
 
 const Card = ({data}) => {
-  console.log(data, 'paici');
+  // console.log(data, 'paici');
+
+  const [isSelicted,setIsselicted] = useState([]);
+  console.log(isSelicted, "paitaci");
+  
+
   
   return (
     
@@ -15,7 +20,7 @@ const Card = ({data}) => {
      
           {
             data.map(player=>{
-             return <div className="card bg-base-100  shadow-sm  ">
+             return<div key={player.id} className="card bg-base-100  shadow-sm  ">
           <figure>
          <img
            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -35,7 +40,18 @@ const Card = ({data}) => {
          </div>
          <div className="card-actions flex">
            <p>Price:{player.price}</p>
-           <button className="btn btn-sm"> Chose Player</button>
+             <div>
+               <button onClick={() => {setIsselicted(prev => prev.includes(player.id) ? prev.filter(id => id !== player.id) : [...prev, player.id]);
+                alert(`${player.playerName} Nea Nici`);
+               }}
+           className="btn btn-sm" 
+           disabled={isSelicted.includes(player.id)}
+           >
+            {isSelicted.includes(player.id) ? "Selicted" : "Chouse player"}</button>
+
+             </div>
+           
+
          </div>
        </div>
            </div>

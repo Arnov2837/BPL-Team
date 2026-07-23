@@ -12,8 +12,7 @@ const AvailablePlayers = ({data}) => {
        
 
     <>
-    <Card data={data}></Card>
-    
+    <Card data={data}key={data.id}></Card>
     
     </>
    
