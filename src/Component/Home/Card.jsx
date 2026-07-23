@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser } from "react-icons/fa";
 import { IoIosFlag } from "react-icons/io";
+import { toast } from 'react-toastify';
 
 
 const Card = ({data}) => {
@@ -42,7 +43,8 @@ const Card = ({data}) => {
            <p>Price:{player.price}</p>
              <div>
                <button onClick={() => {setIsselicted(prev => prev.includes(player.id) ? prev.filter(id => id !== player.id) : [...prev, player.id]);
-                alert(`${player.playerName} Nea Nici`);
+                // alert(`${player.playerName} Nea Nici`)
+                toast(`${player.playerName} Done Nea Nici`)
                }}
            className="btn btn-sm" 
            disabled={isSelicted.includes(player.id)}

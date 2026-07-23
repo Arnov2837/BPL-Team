@@ -4,6 +4,7 @@ import './App.css'
 import Hero from './Component/Home/Hero'
 import Playar from './Component/Home/Playar'
 import { Suspense } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
 
 const fatchPlayre = async()=> {
   const res = await fetch("/Plaredata.json");
@@ -21,7 +22,8 @@ function App() {
         <Playar PlayerPromis={PlayerPromis} ></Playar>
       </Suspense>
 
-      
+      /* react tost component */
+       <ToastContainer />
     </>
   )
 }
